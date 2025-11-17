@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IJAD AGRO BUSINESS</title>
+    <style>
+        /* --- General Reset & Structure --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; background-color: #f4f4f4; }
+        .content-section { padding: 40px 20px; }
+        .content-section h2 { text-align: center; margin-bottom: 20px; }
+        
+        /* *** TEXT ALIGNMENT FIX (APPLIED JUSTIFY) *** */
+        .content-section .section-text { 
+            margin: auto; 
+            text-align: justify; /* Text alignment fix for About/Contact section */
+            margin-bottom: 20px; 
+        }
+        
+        /* --- Navigation --- */
+        nav { background-color: #2c3e50; padding: 15px 20px; }
+        nav ul { list-style: none; display: flex; justify-content: center; }
+        nav ul li { margin: 0 20px; }
+        nav ul li a { color: #fff; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: color 0.3s; }
+        nav ul li a:hover { color: #f39c12; }
+        
+        /* --- Header --- */
+        header { text-align: center; padding: 40px 20px; background-color: #29b948; color: #fff; }
+        header .header-logo { max-width: 250px; height: auto; display: block; margin: 0 auto 10px auto; }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        header p.tagline { font-size: 1.2em; font-weight: bold; padding-bottom: 20px; }
+        
+        /* *** NEW CLASS FOR TOP INTRODUCTION TEXT *** */
+        .intro-text-block {
+            text-align: justify; /* Text alignment fix for main intro paragraph */
+            padding: 20px;
+            font-size: 1.1em;
+            max-width: 900px;
+            margin: 0 auto 40px auto;
+            color: #333;
+        }
+        /* *** END NEW CLASS *** */
+
+        /* --- Products --- */
+        .products { display: flex; flex-wrap: wrap; justify-content: center; padding: 30px 20px; }
+        .product-card { background-color: #148891; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 280px; margin: 15px; overflow: hidden; transition: transform 0.3s; color: #fff; }
+        .product-card:hover { transform: scale(1.03); }
+        .product-card img { width: 100%; height: 200px; object-fit: cover; }
+        .product-info { padding: 15px; text-align: center; }
+        .product-info h3 { margin-bottom: 10px; color: #d8dce0; }
+
+        /* --- Buttons & Links --- */
+        .btn { display: inline-block; padding: 10px 20px; margin-top: 10px; background-color: #6112f3; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 1em; text-decoration: none; transition: background-color 0.3s; }
+        .btn:hover { background-color: #22e69b; }
+
+        /* --- About Section --- */
+        #about { background-color: #ecf0f1; color: #333; }
+
+        /* --- Contact/Form Styling --- */
+        .order-form-container { max-width: 600px; margin: 0 auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); color: #333; text-align: left; }
+        .order-form-container label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .order-form-container input[type="text"], .order-form-container input[type="email"], .order-form-container input[type="tel"], .order-form-container select, .order-form-container textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        .order-form-container textarea { resize: vertical; }
+        .form-info { text-align: center; margin-bottom: 15px; font-style: italic; color: #666; }
+        #contact-details-box { background: #f9f9f9; border: 1px dashed #29b948; max-width: 400px; margin: 20px auto; padding: 15px; border-radius: 6px; }
+
+        /* --- Footer --- */
+        footer { background-color: #2c3e50; color: #fff; text-align: center; padding: 20px 10px; margin-top: 40px; }
+
+        /* --- Responsiveness --- */
+        @media (max-width: 768px) {
+            nav ul { flex-direction: column; padding: 10px 0; }
+            nav ul li { margin: 10px 0; }
+            .product-card { width: 95%; margin: 15px 0; }
+            header h1 { font-size: 2em; } 
+            header .header-logo { max-width: 200px; }
+            /* Adjust justify for better reading on small screens (switches back to left alignment) */
+            .intro-text-block, .content-section .section-text { text-align: left; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header id="home"> 
+    <p class="tagline"><marquee>welcome to IJAD AGRO BUSINESS Your trusted supplier of quality and pure agricultural 
+        products from Tanzania.</marquee></p>
+</header>
+
+<p class="intro-text-block">
+    Established in Dar es Salaam, IJAD AGRO BUSINESS is driven by a singular mission: to supply the global market with the freshest, 
+    most authentic agricultural products. We are not just traders; we are curators of flavor, 
+    working closely with local farmers to ensure every grain of spice—from our potent cloves,cardamom,ginger to our rich black pepper—meets the 
+    highest international standards. We believe that superior taste begins with superior sourcing.
+     Our commitment to integrity and traceability means you receive products that are not only aromatic
+      and high-grade but are also ethically and sustainably sourced. When you choose IJAD AGRO BUSINESS, 
+      you choose a trusted supply chain built on reliability, passion, and the unparalleled quality of Tanzanian agriculture.
+      
+</p>
+
+<section id="products" class="products">
+    
+    <div class="product-card">
+        <img src="images/cloves (2).jpg" alt="High-quality Cloves" />
+        <div class="product-info">
+            <h3>Cloves</h3>
+            <p>High-quality cloves for your culinary and medicinal needs.</p>
+            <a href="#order-form" class="btn">Order Now</a>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="images/cardomom.jpg" alt="Premium Cardamom" />
+        <div class="product-info">
+            <h3>Cardamom</h3>
+            <p>Premium cardamom for aromatic flavor and health benefits.</p>
+            <a href="#order-form" class="btn">Order Now</a>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="images/ginger.jpg" alt="Fresh Ginger Roots" />
+        <div class="product-info">
+            <h3>Ginger</h3>
+            <p>Fresh ginger roots, perfect for cooking and health remedies.</p>
+            <a href="#order-form" class="btn">Order Now</a>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="images/pepper.jpg" alt="Top-grade Black Pepper" />
+        <div class="product-info">
+            <h3>Black Pepper</h3>
+            <p>Top-grade black pepper for seasoning and medicinal purposes.</p>
+            <a href="#order-form" class="btn">Order Now</a>
+        </div>
+    </div>
+    
+    <div class="product-card">
+        <img src="images/dry ginger.jpg" alt="Assortment of Ground Species" />
+        <div class="product-info">
+            <h3>Dry split ginger</h3>
+            <p>Top-grade ground spices for seasoning and medicinal purposes.</p>
+            <a href="#order-form" class="btn">Order Now</a>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="content-section">
+    <h2>About Us</h2>
+    <p class="section-text">
+        We are dedicated to providing the best quality agricultural products directly from farms to your doorstep.
+         With years of experience, we ensure freshness and authenticity in every product.
+    </p>
+</section>
+
+<section id="contact" class="content-section">
+    <h2 id="order-form">Place Your Order / Contact Us</h2>
+    
+    <p class="section-text" style="text-align: center; font-weight: bold;">
+        Use the order form below, or contact us on whatsapp, +255688275555
+    </p>
+
+    <div id="contact-details-box" style="display: none;">
+        <p class="section-text" style="text-align: center;">
+            Email: **info@ijadagro.com** <br>
+            Phone: +255688275555,+255764647477,+255679154656 <br>
+            Address: Temeke, Dar es salaam, Tanzania
+        </p>
+    </div>
+    
+    <div id="order-form-details" style="display: none;"> 
+        <div class="order-form-container">
+            <form action="https://formsubmit.co/joshuajamesjoshua@gmail.com" method="POST">
+                
+                <p class="form-info">Fields marked with (*) are required.</p>
+                
+                <label for="name">Full Name (*)</label>
+                <input type="text" id="name" name="Name" required>
+
+                <label for="email">Email Address (*)</label>
+                <input type="email" id="email" name="Email" required>
+
+                <label for="phone">Phone Number (*)</label>
+                <input type="tel" id="phone" name="Phone" required>
+
+                <label for="product">Product Interested In (*)</label>
+                <select id="product" name="Product_Interested_In" required>
+                    <option value="" disabled selected>-- Select a Product --</option>
+                    <option value="Cloves">Cloves</option>
+                    <option value="Cardamom">Cardamom</option>
+                    <option value="Ginger">Ginger</option>
+                    <option value="Black Pepper">Black Pepper</option>
+                    <option value="Ground Spices">Ground Spices</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                </select>
+
+                <label for="quantity">Desired Quantity (e.g., 50kg, 1 ton)</label>
+                <input type="text" id="quantity" name="Desired_Quantity">
+
+                <label for="message">Additional Message / Delivery Details</label>
+                <textarea id="message" name="Message" rows="4"></textarea>
+
+                <button type="submit" class="btn">Submit Order Inquiry</button>
+                
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 IjadAgro business. All rights reserved.</p>
+</footer>
+
+<script>
+    // 1. Logic for ORDER NOW buttons (Products Section)
+    document.querySelectorAll('.product-card .btn').forEach(button => {
+        button.addEventListener('click', (event) => {
+            event.preventDefault(); 
+            
+            // Show the order form and hide the simple contact details
+            document.getElementById('order-form-details').style.display = 'block';
+            document.getElementById('contact-details-box').style.display = 'none';
+
+            // Smoothly scroll to the form heading
+            document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });
+            
+            // Auto-select the product
+            const productNameElement = event.target.closest('.product-card').querySelector('h3');
+            const productName = productNameElement ? productNameElement.textContent : 'General Inquiry';
+            
+            const productSelect = document.getElementById('product');
+            if (productSelect) {
+                productSelect.value = productName;
+            }
+        });
+    });
+
+    // 2. Logic for CONTACT link (Navigation Bar)
+    document.querySelector('nav ul li a[href="#contact"]').addEventListener('click', (event) => {
+        event.preventDefault(); 
+        
+        // Show the simple contact details box and hide the order form
+        document.getElementById('contact-details-box').style.display = 'block';
+        document.getElementById('order-form-details').style.display = 'none';
+
+        // Smoothly scroll to the contact section
+        document.getElementById('contact').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+</body>
+</html>
+```
